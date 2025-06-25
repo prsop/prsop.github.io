@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>MysticMS | CrystalPvP Minecraft Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-purple: #9B59B6;
+      --dark-purple: #6C3483;
+      --light-purple: #D6B4FC;
+      --accent: #f6e05e;
+      --white: #fff;
+      --nav-purple: #7d3c98;
+      --purple-gradient: linear-gradient(135deg, #6C3483 60%, #9B59B6 100%);
+      --section-bg: #71368aee;
+      --button-bg: #d6b4fc;
+      --button-text: #2d0c46;
+      --button-hover-bg: #6c3483;
+      --button-hover-text: #fff;
+    }
+    body {
+      margin: 0;
+      font-family: 'Russo One', 'Arial Black', Arial, sans-serif;
+      background: var(--purple-gradient);
+      color: var(--white);
+    }
+    header {
+      background: var(--nav-purple);
+      padding: 24px 0 16px 0;
+      text-align: center;
+      border-bottom: 3px solid var(--light-purple);
+      box-shadow: 0 5px 20px #0002;
+    }
+    .logo {
+      width: 160px;
+      height: 160px;
+      border-radius: 30px;
+      margin-bottom: 8px;
+      border: 5px solid var(--light-purple);
+      background: #222;
+      object-fit: cover;
+      box-shadow: 0 4px 24px #6c3483aa;
+    }
+    nav {
+      margin-top: 16px;
+    }
+    nav a {
+      color: var(--light-purple);
+      text-decoration: none;
+      margin: 0 18px;
+      font-size: 1.1em;
+      transition: color 0.2s;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    .hero {
+      padding: 60px 20px 40px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #8e44ad 60%, #5e3370 100%);
+      box-shadow: 0 8px 32px #0003;
+    }
+    .hero-title {
+      font-size: 3em;
+      letter-spacing: 2px;
+      color: var(--light-purple);
+      margin: 0 0 12px 0;
+      text-shadow: 0 4px 24px #6c3483cc;
+    }
+    .hero-desc {
+      font-size: 1.3em;
+      margin-bottom: 32px;
+      color: #f6e9ff;
+      text-shadow: 0 2px 8px #6c348380;
+    }
+    .server-ip {
+      display: inline-block;
+      background: #3b1e5c;
+      border: 2px solid var(--light-purple);
+      color: var(--light-purple);
+      padding: 10px 30px;
+      border-radius: 20px;
+      font-size: 1.3em;
+      font-family: 'Russo One', Arial, sans-serif;
+      margin-bottom: 28px;
+      margin-top: 8px;
+      letter-spacing: 1px;
+      user-select: all;
+      cursor: pointer;
+      box-shadow: 0 2px 12px #7d3c98aa;
+      transition: background 0.2s;
+    }
+    .server-ip:hover {
+      background: var(--dark-purple);
+    }
+    .cta-buttons {
+      margin-top: 30px;
+    }
+    .cta-buttons a {
+      display: inline-block;
+      background: var(--button-bg);
+      color: var(--button-text);
+      padding: 14px 40px;
+      border-radius: 28px;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 0 14px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+      box-shadow: 0 2px 10px #6c3483bb;
+      border: none;
+    }
+    .cta-buttons a:hover {
+      background: var(--button-hover-bg);
+      color: var(--button-hover-text);
+    }
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 60px auto 0 auto;
+      max-width: 1100px;
+      justify-content: center;
+      gap: 30px;
+    }
+    .section {
+      flex: 1 1 320px;
+      background: var(--section-bg);
+      border-radius: 20px;
+      padding: 32px 26px;
+      min-width: 300px;
+      max-width: 400px;
+      box-shadow: 0 2px 20px #0003;
+      margin-bottom: 20px;
+      border: 2px solid var(--light-purple);
+    }
+    .section h2 {
+      color: var(--accent);
+      font-size: 1.5em;
+      margin-bottom: 14px;
+      text-shadow: 0 2px 10px #6c3483a0;
+    }
+    .section ul, .section p {
+      color: #f3e0ff;
+      font-size: 1.08em;
+      line-height: 1.6;
+    }
+    .section a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    footer {
+      background: #42115c;
+      color: #eee;
+      text-align: center;
+      padding: 28px 12px 20px 12px;
+      margin-top: 60px;
+      border-top: 2px solid var(--light-purple);
+      font-size: 1em;
+      box-shadow: 0 -2px 20px #0002;
+    }
+    @media (max-width: 900px) {
+      .sections {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="MysticMS Logo" class="logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Store</a>
+      <a href="#">Leaderboards</a>
+      <a href="#">Vote</a>
+      <a href="#">About</a>
+      <a href="#">Discord</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-title">Welcome to MysticMS CrystalPvP!</div>
+    <div class="hero-desc">
+      The ultimate CrystalPvP experience! <br>
+      Lightning-fast combat, custom crystals, ranked leaderboards, and a mystical purple theme.<br>
+      Connect now and battle the best!
+    </div>
+    <div class="server-ip" onclick="navigator.clipboard.writeText('mysticms.me'); alert('Server IP copied!')">
+      mysticms.me
+    </div>
+    <div class="cta-buttons">
+      <a href="#">Join Discord</a>
+      <a href="#">View Leaderboards</a>
+    </div>
+  </section>
+  <div class="sections">
+    <div class="section">
+      <h2>CrystalPvP Features</h2>
+      <ul>
+        <li>💎 Custom crystal mechanics and effects</li>
+        <li>⚔️ Competitive PvP arenas & ranked matches</li>
+        <li>🏆 Live leaderboards with player stats</li>
+        <li>🎉 Weekly tournaments and rewards</li>
+        <li>🛡️ Anti-cheat & fair moderation</li>
+        <li>💬 Friendly and active community</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>News & Announcements</h2>
+      <p>
+        <strong>June 2025:</strong> MysticMS CrystalPvP Season 2 is live!<br>
+        <strong>Upcoming:</strong> 1v1 Tournament this weekend – sign up on Discord!<br>
+        <em>Check Discord and our forums for updates and patch notes.</em>
+      </p>
+    </div>
+    <div class="section">
+      <h2>Connect With Us</h2>
+      <ul>
+        <li>Join our <a href="#">Discord</a> for events & support</li>
+        <li>Climb the <a href="#">leaderboards</a> and show your skill</li>
+        <li>Vote for rewards on <a href="#">voting sites</a></li>
+        <li>Support us in the <a href="#">store</a></li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 MysticMS | Not affiliated with Mojang or Microsoft.<br>
+    Website inspired by Hypixel & CrystalPvP communities.
+  </footer>
+</body>
+</html>
