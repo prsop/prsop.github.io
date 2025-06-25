@@ -7,39 +7,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --purple-dark: #2d014d;
-      --purple-main: #7a1fa2;
-      --purple-accent: #bb86fc;
-      --purple-light: #e0b3ff;
-      --glass-bg: rgba(55, 6, 90, 0.65);
-      --glass-border: rgba(186, 104, 200, 0.28);
-      --btn-gradient: linear-gradient(90deg, #bb86fc 0%, #7a1fa2 100%);
-      --btn-hover: linear-gradient(90deg, #e0b3ff 0%, #7a1fa2 100%);
-      --shadow: 0 8px 40px 0 rgba(186, 104, 200, 0.25);
+      --purple-bg: #210034;
+      --purple-main: #8224e3;
+      --purple-accent: #d1a8ff;
+      --purple-light: #f3e8ff;
+      --glass-bg: rgba(70, 15, 110, 0.60);
+      --glass-border: rgba(209, 168, 255, 0.25);
+      --btn-gradient: linear-gradient(90deg, #d1a8ff 0%, #8224e3 100%);
+      --btn-hover: linear-gradient(90deg, #f3e8ff 0%, #8224e3 100%);
+      --shadow: 0 8px 40px 0 rgba(130, 36, 227, 0.16);
       --font-header: 'Russo One', Arial, sans-serif;
       --font-body: 'Montserrat', Arial, sans-serif;
     }
     body {
       margin: 0;
       min-height: 100vh;
-      background: radial-gradient(ellipse at top left, #bb86fc 0%, #7a1fa2 50%, #2d014d 100%);
+      background: radial-gradient(ellipse at top left, #d1a8ff 0%, #8224e3 60%, #210034 100%);
       color: #fff;
       font-family: var(--font-body);
       overflow-x: hidden;
       position: relative;
     }
-    /* Sparkle background */
     body::before {
       content: "";
       position: fixed;
       inset: 0;
       z-index: 0;
-      background: url('https://www.transparenttextures.com/patterns/stardust.png'), radial-gradient(ellipse at top left, #e0b3ff44 0%, #7a1fa222 60%, #2d014d00 100%);
-      opacity: 0.3;
+      background: url('https://www.transparenttextures.com/patterns/stardust.png'),
+        radial-gradient(ellipse at top left, #f3e8ff33 0%, #8224e322 60%, transparent 100%);
+      opacity: 0.23;
       pointer-events: none;
     }
     header {
-      background: rgba(42, 7, 78, 0.95);
+      background: rgba(46, 0, 80, 0.97);
       padding: 28px 0 18px 0;
       text-align: center;
       border-bottom: 3px solid var(--purple-accent);
@@ -55,7 +55,7 @@
       border: 5px solid var(--purple-accent);
       background: #222;
       object-fit: cover;
-      box-shadow: 0 4px 24px #bb86fc77;
+      box-shadow: 0 4px 24px #d1a8ff77;
       transition: transform 0.2s;
     }
     .logo:hover {
@@ -68,21 +68,21 @@
       color: var(--purple-light);
       text-decoration: none;
       margin: 0 22px;
-      font-size: 1.14em;
+      font-size: 1.12em;
       font-weight: 700;
       letter-spacing: 1.5px;
-      text-shadow: 0 2px 8px #2d014d66;
+      text-shadow: 0 2px 8px #21003455;
       transition: color 0.2s;
     }
     nav a:hover {
       color: var(--purple-accent);
-      text-shadow: 0 2px 16px #e0b3ffbb;
+      text-shadow: 0 2px 16px #f3e8ffbb;
     }
     .hero {
-      padding: 60px 20px 40px 20px;
+      padding: 64px 20px 46px 20px;
       text-align: center;
-      background: linear-gradient(135deg, #7a1fa2cc 60%, #2d014dcc 100%);
-      box-shadow: 0 8px 32px #7a1fa255;
+      background: linear-gradient(135deg, #a564dfcc 60%, #210034cc 100%);
+      box-shadow: 0 8px 32px #8224e344;
       border-bottom-left-radius: 64px;
       border-bottom-right-radius: 64px;
       margin-bottom: 42px;
@@ -91,42 +91,42 @@
     }
     .hero-title {
       font-family: var(--font-header);
-      font-size: 3.2em;
+      font-size: 3.1em;
       letter-spacing: 2.5px;
       color: var(--purple-accent);
       margin: 0 0 14px 0;
-      text-shadow: 0 6px 32px #2d014d;
+      text-shadow: 0 6px 32px #210034;
       line-height: 1.1;
     }
     .hero-desc {
-      font-size: 1.27em;
+      font-size: 1.20em;
       margin-bottom: 35px;
       color: #fff;
-      text-shadow: 0 2px 24px #7a1fa277;
-      max-width: 580px;
+      text-shadow: 0 2px 24px #8224e344;
+      max-width: 600px;
       margin-left: auto;
       margin-right: auto;
     }
     .server-ip {
       display: inline-block;
-      background: rgba(224, 179, 255, 0.17);
+      background: rgba(243, 232, 255, 0.14);
       border: 2.5px solid var(--purple-accent);
-      color: var(--purple-light);
+      color: var(--purple-accent);
       padding: 13px 38px;
       border-radius: 24px;
-      font-size: 1.3em;
+      font-size: 1.25em;
       font-family: var(--font-header);
-      margin-bottom: 26px;
+      margin-bottom: 22px;
       margin-top: 12px;
       letter-spacing: 2px;
       user-select: all;
       cursor: pointer;
-      box-shadow: 0 2px 12px #bb86fc99;
+      box-shadow: 0 2px 12px #d1a8ff99;
       transition: background 0.2s, border-color 0.2s;
     }
     .server-ip:hover {
       background: var(--purple-accent);
-      color: var(--purple-dark);
+      color: var(--purple-bg);
       border-color: #fff;
     }
     .cta-buttons {
@@ -135,29 +135,29 @@
     .cta-buttons a {
       display: inline-block;
       background: var(--btn-gradient);
-      color: var(--purple-dark);
+      color: var(--purple-bg);
       padding: 16px 44px;
       border-radius: 32px;
-      font-size: 1.24em;
+      font-size: 1.17em;
       font-weight: 700;
-      margin: 0 16px 12px 16px;
+      margin: 0 10px 12px 10px;
       text-decoration: none;
-      box-shadow: 0 2px 18px #bb86fc55;
+      box-shadow: 0 2px 18px #d1a8ff44;
       border: none;
       letter-spacing: 1px;
-      transition: background 0.22s, color 0.22s, transform 0.15s;
+      transition: background 0.18s, color 0.18s, transform 0.15s;
       font-family: var(--font-header);
     }
     .cta-buttons a:hover {
       background: var(--btn-hover);
-      color: #2d014d;
-      transform: scale(1.07);
+      color: #210034;
+      transform: scale(1.06);
     }
     .sections {
       display: flex;
       flex-wrap: wrap;
-      margin: 48px auto 0 auto;
-      max-width: 1200px;
+      margin: 52px auto 0 auto;
+      max-width: 1180px;
       justify-content: center;
       gap: 38px;
       z-index: 1;
@@ -172,25 +172,25 @@
       max-width: 420px;
       box-shadow: var(--shadow);
       margin-bottom: 24px;
-      border: 2.5px solid var(--glass-border);
+      border: 2px solid var(--glass-border);
       backdrop-filter: blur(8px);
-      transition: transform 0.18s;
+      transition: transform 0.14s;
     }
     .section:hover {
-      transform: translateY(-8px) scale(1.025);
-      box-shadow: 0 12px 48px #bb86fc28;
+      transform: translateY(-7px) scale(1.022);
+      box-shadow: 0 12px 48px #d1a8ff18;
       border-color: var(--purple-accent);
     }
     .section h2 {
       color: var(--purple-accent);
       font-family: var(--font-header);
-      font-size: 1.55em;
+      font-size: 1.47em;
       margin-bottom: 15px;
-      text-shadow: 0 2px 14px #bb86fc73;
+      text-shadow: 0 2px 14px #d1a8ff66;
     }
     .section ul, .section p {
       color: var(--purple-light);
-      font-size: 1.09em;
+      font-size: 1.07em;
       line-height: 1.65;
       margin: 0 0 5px 0;
     }
@@ -199,7 +199,7 @@
       margin-bottom: 0;
     }
     .section li {
-      margin-bottom: 10px;
+      margin-bottom: 9px;
     }
     .section a {
       color: var(--purple-accent);
@@ -211,16 +211,16 @@
       text-decoration: underline wavy;
     }
     footer {
-      background: rgba(42, 7, 78, 0.97);
+      background: rgba(46, 0, 80, 0.98);
       color: var(--purple-light);
       text-align: center;
       padding: 32px 12px 24px 12px;
-      margin-top: 70px;
-      border-top: 2.5px solid var(--purple-accent);
+      margin-top: 65px;
+      border-top: 2px solid var(--purple-accent);
       font-size: 1.03em;
       font-family: var(--font-body);
       letter-spacing: 1px;
-      box-shadow: 0 -2px 20px #7a1fa220;
+      box-shadow: 0 -2px 20px #8224e320;
       z-index: 2;
       position: relative;
     }
@@ -240,8 +240,6 @@
     <img src="logo.png" alt="MysticMS Logo" class="logo">
     <nav>
       <a href="#">Home</a>
-      <a href="#">Store</a>
-      <a href="#">Leaderboards</a>
       <a href="#">Vote</a>
       <a href="#">About</a>
       <a href="#">Discord</a>
@@ -250,52 +248,50 @@
   <section class="hero">
     <div class="hero-title">MysticMS CrystalPvP</div>
     <div class="hero-desc">
-      <b>Unleash your power in the <span style="color:#e0b3ff;">ultimate CrystalPvP battleground</span>!</b> 
-      <br>Blazing-fast combat, custom crystals, ranked leaderboards, and a magical world await. 
-      <br><span style="color:#bb86fc;">Compete, conquer, and rise to the top!</span>
+      <b>Welcome to MysticMS — the next generation of CrystalPvP.</b><br>
+      Battle in dazzling purple arenas, master explosive crystal combat, and become a legend among a thriving community.<br>
+      Dive into a world where skill, speed, and creativity decide the victor!
     </div>
     <div class="server-ip" onclick="navigator.clipboard.writeText('mysticms.me'); alert('Server IP copied!')">
       mysticms.me
     </div>
     <div class="cta-buttons">
       <a href="#">Join Discord</a>
-      <a href="#">View Leaderboards</a>
-      <a href="#">Shop Now</a>
+      <a href="#">Vote for Rewards</a>
     </div>
   </section>
   <div class="sections">
     <div class="section">
-      <h2>⚡ Why Play MysticMS?</h2>
+      <h2>✨ What Makes Us Unique?</h2>
       <ul>
-        <li>💎 <b>True CrystalPvP</b> – 1.12/1.8 mechanics, custom-coded for peak performance</li>
-        <li>⚔️ <b>Competitive Arenas</b> – 1v1, FFA, and team duels</li>
-        <li>🏆 <b>Live Leaderboards</b> – Track your kills, wins, and ELO ranking</li>
-        <li>🧙 <b>Magic & Custom Crystals</b> – Power up with unique effects</li>
-        <li>🎉 <b>Events & Tournaments</b> – Weekly battles and epic prizes</li>
-        <li>🛡️ <b>Lag-Free & Fair</b> – Premium anti-cheat, no pay-to-win</li>
+        <li>💎 <b>Crystal Combat, Perfected:</b> Enjoy lightning-fast PvP with custom-coded crystals and flawless mechanics.</li>
+        <li>🧨 <b>Epic Arenas:</b> Play on stunning, original maps made for thrilling CrystalPvP showdowns.</li>
+        <li>🎉 <b>Events Every Week:</b> Take part in tournaments, duels, and surprise events—win rare rewards!</li>
+        <li>🛡️ <b>Zero Lag, Zero Cheats:</b> Our powerful anti-cheat and world-class hosting keep the fight fair and smooth.</li>
+        <li>🤝 <b>Friendly Community:</b> Meet rivals and friends, join teams, and grow together in a supportive environment.</li>
       </ul>
     </div>
     <div class="section">
-      <h2>🔥 Latest News</h2>
+      <h2>🚀 Latest Announcements</h2>
       <p>
-        <b>June 2025:</b> <span style="color:#e0b3ff;">Season 2 launched!</span> <br>
-        <b>This week:</b> <span style="color:#bb86fc;">Crystal Clash Tournament</span> – Top 3 win exclusive tags!<br>
-        <b>Update:</b> New <span style="color:#bb86fc;">“Shadow Crystal”</span> added. Check <a href="#">patch notes</a>!
+        <b>June 2025:</b> <span style="color:#d1a8ff;">Season 2 is live with new maps and crystals!</span><br>
+        <b>This weekend:</b> <span style="color:#f3e8ff;">Free-for-all Mega Event</span> — Join Discord to sign up.<br>
+        <b>Update:</b> Discover the <span style="color:#d1a8ff;">Mystic Crystal</span> — unleash unique powers in battle!
       </p>
     </div>
     <div class="section">
-      <h2>💬 Community</h2>
+      <h2>💬 Join the Community</h2>
       <ul>
-        <li>Chat & party up in our <a href="#">Discord</a></li>
-        <li>Share PvP montages & guides on our <a href="#">forums</a></li>
-        <li>Vote <a href="#">here</a> for daily rewards</li>
-        <li>Support MysticMS in the <a href="#">store</a> & unlock cool cosmetics</li>
+        <li>Chat and strategize on our <a href="#">Discord</a></li>
+        <li>Vote to earn exclusive in-game rewards <a href="#">here</a></li>
+        <li>Read guides and share your PvP moments on the <a href="#">forums</a></li>
+        <li>New to CrystalPvP? Say hi—our players and staff are here to help!</li>
       </ul>
     </div>
   </div>
   <footer>
     &copy; 2025 MysticMS | Not affiliated with Mojang or Microsoft.<br>
-    <span style="color:#bb86fc;">CrystalPvP reimagined. Join the fight!</span>
+    <span style="color:#d1a8ff;">Ready to shatter the competition? Join MysticMS and ignite your CrystalPvP adventure!</span>
   </footer>
 </body>
 </html>
